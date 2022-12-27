@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
@@ -18,10 +19,15 @@ public class Main {
         }
 
         Stream<Person> stream = persons.stream();
-
+        Stream<Person> stream2 = persons.stream();
         //поиск кол-ва несовершеннолетних
         long count = stream.filter(person -> person.getAge() < 18).count();
         System.out.println(count);
-        
+
+        //поиск презывников
+        List<String> count2 = stream2.filter( person -> (person.getAge() >= 18 && person.getAge() < 27)).
+                map(Person::getFamily).toList();
+        System.out.println(count2);
+
     }
 }
