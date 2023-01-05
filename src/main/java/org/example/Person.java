@@ -1,4 +1,6 @@
-class Person {
+package org.example;
+
+public class Person {
     private String name;
     private String family;
     private Integer age;
@@ -35,7 +37,7 @@ class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "org.example.Person{" +
                 "name='" + name + '\'' +
                 ", family='" + family + '\'' +
                 ", age=" + age +
