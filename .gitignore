@@ -6,7 +6,7 @@ out/
 # IntellijIdea files
 .idea/
 *.iml
-*.xml
+
 
 ### Eclipse ###
 .apt_generated
